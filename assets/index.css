@@ -3,7 +3,7 @@
   width: 100%;
   height: 600px;
   background-image: url(../images/sky.png);
-  background-position-x: 100px;   /* 移动天空 */
+  background-position-x: 0px;   /* 移动天空 */
 }
 .bird {
   position: absolute;
@@ -13,6 +13,8 @@
   width: 30px;
   height: 30px;
   background-image: url(../images/birds.png);
+  background-position-x: 0px;
+  transition: top .3s linear; 
 }
 .start {
   position: relative;
@@ -24,6 +26,7 @@
   line-height: 60px;
   text-align: center;
   font-weight: bolder;
+  transition: all .3s linear;
 }
 .start.start-blue {
   color: #09f;
@@ -42,6 +45,7 @@
   font-size: 20px;
   font-weight: bolder;
   color:#fff;
+  display: none;
 }
 .mask {
   position: absolute;
@@ -51,6 +55,7 @@
   left: 0px;
   opacity: .7;
   background-color: #000;
+  display: none;
 }
 
 .end {
@@ -59,6 +64,7 @@
   left:50%;
   transform: translateX(-50%);
   text-align: center;
+  display: none;
 }
 .end .over {
   font-size: 36px;
