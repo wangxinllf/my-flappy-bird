@@ -4,6 +4,7 @@
   height: 600px;
   background-image: url(../images/sky.png);
   background-position-x: 0px;   /* 移动天空 */
+  overflow: hidden;
 }
 .bird {
   position: absolute;
@@ -112,4 +113,19 @@
   color: #09f;
   font-weight: bolder;
   cursor: pointer;
+}
+.pipe {
+  position: absolute;
+  width: 52px;
+}
+.pipe.pipe-up {
+  top:0;
+  background-image: url(../images/pipe2.png);
+  background-position-y: bottom;
+
+}
+.pipe.pipe-down {
+  bottom: 0;
+  background-image: url(../images/pipe1.png);
+
 }
